@@ -45,6 +45,7 @@ description: 收集和拆解优秀帖子、分析对标账号、从评论里挖�
 
 1. 复制 `templates/sample.md` 到 `library/samples/<platform>/<笔记id>.md`，id = `S-<platform>-<笔记id>`
 2. 填 frontmatter：**url 和作者必须保留**，指标照实填
+   - **图片要存全**：封面 + 每一页内页，存到 `library/batches/assets/<批次>/<笔记id>-p01.png`、`-p02.png`…，样本卡里逐页列出。Claude 要看实图分析版式，只有封面不够
 3. 按模板 1～9 节逐项拆解。规则：
    - 不改写、不润色、不夸赞；只描述结构和传播机制
    - 钩子必须给「类型 + 原句」
