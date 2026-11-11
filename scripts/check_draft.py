@@ -46,7 +46,8 @@ def check(path: Path, root: Path) -> tuple[list[str], list[str]]:
     body_no_comments = re.sub(r"<!--.*?-->", "", body, flags=re.S)
     # 审核记录是内部备注，不参与内容扫描
     scan_text = re.split(r"^##\s+审核记录", body_no_comments, maxsplit=1, flags=re.M)[0]
-    publish_text = "\n".join([meta.get("title", ""), secs.get("封面文案", ""), secs.get("正文", ""), secs.get("话题", "")])
+    publish_text = "\n".join([meta.get("title", ""), secs.get("封面文案", ""), secs.get("卡片（图片内容，按页；内容主要在这里）", ""),
+                             secs.get("正文", ""), secs.get("话题", "")])
 
     # --- 长度 ---
     title = meta.get("title", "")
