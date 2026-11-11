@@ -32,7 +32,8 @@ def sample(nid: str, author: str, likes="100", collects="200", comments="30", fo
         published: unknown
         collected: 2026-11-11
         format: 图文
-        pillar: 集群排障实录
+        pillar: 硬核干货
+        hook_type: 实用清单
         likes: {likes}
         collects: {collects}
         comments: {comments}
@@ -57,7 +58,8 @@ def post(pid: str, status="published", patterns="P-001", d7=("50", "80", "10"), 
         title: {title}
         status: {status}
         platform: xhs
-        pillar: 集群排障实录
+        pillar: AI热点上手
+        role: 引流
         patterns: {patterns}
         inspired_by: none
         product: none
@@ -307,6 +309,9 @@ class TestReport(RepoFixture):
         self.assertIn("自测有效", p1)
         self.assertIn("自测无效", p2)
         self.assertIn("⚠ 是", p1)
+        role = next(ln for ln in out.splitlines() if ln.startswith("| 引流"))
+        self.assertIn("| 引流 | 4 | 1000 | 5 |", role)
+        self.assertTrue(role.rstrip(" |").endswith("4"), role)  # 线索合计 4（每篇 1）
 
     def test_missing_metrics_skipped(self):
         self.add_post("2026-11-01-a", d7=("", "", ""))

@@ -59,6 +59,21 @@ def post_report(root: Path) -> None:
     for k, v in sorted(by_pillar.items(), key=lambda kv: -(median(kv[1]) or 0)):
         print(f"| {k} | {len(v)} | {fmt(median(v))} |")
 
+    print("\n## 按角色（引流看浏览和涨粉，信任看收藏/赞，转化看线索）\n")
+    print("| 角色 | 篇数 | 浏览中位数 | 涨粉中位数 | 收藏/赞中位数 | 线索合计 |\n|---|---|---|---|---|---|")
+    by_role: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for _, meta, _ in with_data:
+        by_role[meta.get("role") or "未标"].append(meta)
+    for role, metas in sorted(by_role.items()):
+        views = [v for v in (to_int(m.get("d7_views")) for m in metas) if v is not None]
+        follows = [v for v in (to_int(m.get("d7_follows")) for m in metas) if v is not None]
+        ratios = [to_int(m.get("d7_collects")) / to_int(m.get("d7_likes"))  # type: ignore[operator]
+                  for m in metas if to_int(m.get("d7_likes")) and to_int(m.get("d7_collects")) is not None]
+        leads = sum(to_int(m.get("leads")) or 0 for m in metas)
+        r = median(ratios)
+        print(f"| {role} | {len(metas)} | {fmt(median(views))} | {fmt(median(follows))} | "
+              f"{'-' if r is None else f'{r:.2f}'} | {leads} |")
+
     print("\n## 规律自测效果（d7 互动中位数 vs 全部帖子中位数）\n")
     print("| 规律 | 当前状态 | 使用篇数 | 使用帖中位数 | 建议状态 | 是否需改 |\n|---|---|---|---|---|---|")
     uses: dict[str, list[int]] = defaultdict(list)

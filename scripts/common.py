@@ -9,10 +9,10 @@ ROOT = Path(__file__).resolve().parent.parent
 
 SAMPLE_REQUIRED = [
     "id", "platform", "url", "author", "author_url", "author_followers", "published",
-    "collected", "format", "pillar", "likes", "collects", "comments", "shares", "reuse",
+    "collected", "format", "pillar", "hook_type", "likes", "collects", "comments", "shares", "reuse",
 ]
 POST_REQUIRED = [
-    "id", "title", "status", "platform", "pillar", "patterns", "inspired_by", "product", "cta_code",
+    "id", "title", "status", "platform", "pillar", "role", "patterns", "inspired_by", "product", "cta_code",
 ]
 POST_STATUSES = ["idea", "draft", "review", "approved", "published", "archived"]
 PATTERN_STATUSES = ["假设", "样本支持", "自测有效", "自测无效", "废弃"]
