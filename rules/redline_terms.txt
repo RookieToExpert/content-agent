@@ -1,0 +1,11 @@
+# 敏感词表：一行一个，不区分大小写，# 开头为注释。命中即 ERROR。
+# 按需追加公司名、客户名、内部项目代号、内部域名后缀等。
+pjlab
+pjlab.org.cn
+sensecore
+sensetime
+商汤
+上海人工智能实验室
+lepton
+higgs
+ailabdev
