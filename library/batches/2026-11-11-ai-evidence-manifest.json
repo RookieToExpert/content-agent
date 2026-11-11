@@ -1,0 +1,240 @@
+{
+  "collected_date_beijing": "2026-11-11",
+  "source": "Xiaohongshu visible browser UI",
+  "privacy_review": "All public crops visually checked. No login sidebar, comment identities, contact details or query parameters. Author/metric crops may concatenate regions of the same screenshot; one filter/no-result figure joins consecutive screenshots and is labelled in the report. No generated or repainted evidence.",
+  "raw_media_published": false,
+  "files": [
+    {
+      "file": "assets/2026-11-11-ai-discovery/6a0eed1f00000000070139e3-author-metrics.png",
+      "sha256": "5c468a7392498dc33322c9990afe857c05f433475e5acebb40f6dab1878d1b59",
+      "size_px": [
+        235,
+        104
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6a0eed1f00000000070139e3-cover.png",
+      "sha256": "75865c654f043cd95325f1087c6c27467f5292a1d3f6b82df1be350c597f53e3",
+      "size_px": [
+        528,
+        704
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6a16d3b40000000008030b23-author-title-metrics.png",
+      "sha256": "aaae81360a1f142f3e5539df75b4eac609c74d88d659df8ebf685408e7ec3afd",
+      "size_px": [
+        336,
+        162
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6a1ec58a0000000006037914-author-metrics.png",
+      "sha256": "896a80f7107f182328a9671d9121c77c8322b442a9857a07d5072fe66f338b8c",
+      "size_px": [
+        235,
+        104
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6a1ec58a0000000006037914-cover.png",
+      "sha256": "61245f04afbfd5f199a146fa8371a5cbac4ed6dd17d2c643ed8339e2c78cacbc",
+      "size_px": [
+        528,
+        704
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6a5da828000000001d02092a-author-title-metrics.png",
+      "sha256": "b458395445a623eacbace22e81f48811ce70619da2539ece4d01c33cb381b429",
+      "size_px": [
+        350,
+        150
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6ad9810e00000000330219f4-author-title-metrics.png",
+      "sha256": "f358b2dd5f95f4d49c48c4df8c9943794b97ec27b0eb8aa2b4f29661bc6da06a",
+      "size_px": [
+        350,
+        150
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6adeaa1c000000001801ba99-author-metrics.png",
+      "sha256": "542b00106060f880be6ca1e1ff47f3f346f64f9fb1b95a7cca2699ebea59b209",
+      "size_px": [
+        238,
+        107
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6adeaa1c000000001801ba99-cover.png",
+      "sha256": "db2e4b78a32b6392d8fbd6aa5386009bf1095fbddf8041c3bf74c76086680f94",
+      "size_px": [
+        530,
+        704
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6adef93c000000000901b280-author-metrics.png",
+      "sha256": "23d3c105e2bc4746ad6b294456650e9bb1ca29d05eb0995fe5d3707430cade05",
+      "size_px": [
+        238,
+        107
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6adef93c000000000901b280-cover.png",
+      "sha256": "a2a1deafcf3da0b884477e031bb73707f529f36fe63014bec1ceaa36e132c232",
+      "size_px": [
+        530,
+        704
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6adf3d8600000000170399c4-author-title-metrics.png",
+      "sha256": "06d0815c3ebc621ffd8d94a217e617483ff63f5566108dada0b13c5d077cc0dd",
+      "size_px": [
+        350,
+        150
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6ae06db0000000002a030360-author-title-metrics.png",
+      "sha256": "7eea046e9196094059a839e58679609cdb55653b845f03eb9210c5845ae6a66a",
+      "size_px": [
+        350,
+        150
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6ae0a523000000003501ebff-author-metrics.png",
+      "sha256": "507abf429d39e720ec036a158be7e137ec8ed61d59c7d6cad623143d5299fff9",
+      "size_px": [
+        238,
+        107
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6ae0a523000000003501ebff-cover.png",
+      "sha256": "9dddbbd62224861c9cedfd7d349d7ef442f2c5527675e37f14615bd2514d89d0",
+      "size_px": [
+        530,
+        704
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6ae86545000000002d000802-author-title-metrics.png",
+      "sha256": "9e8e80bcfe0fe767384facc8ba5e882099dff812763acfec6314eb12d51738b0",
+      "size_px": [
+        336,
+        139
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6ae9e718000000000e00f807-author-title-metrics.png",
+      "sha256": "46ea8cbaa21346b5c2cdd8dc7b96ff224def31e1c1d13fb8a14538194061f7c2",
+      "size_px": [
+        350,
+        175
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/6aeaf81d0000000010010c7b-author-title-metrics.png",
+      "sha256": "43981e4d751ceba6ecd18c7fa02177141d62f56051d7a732c2fde0abcaddfc49",
+      "size_px": [
+        336,
+        139
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/account-baage-name-metrics.png",
+      "sha256": "b8ad16846b317b23bc3ff602cdc358618cffd538c8c7992be3655dda0bb1f7c8",
+      "size_px": [
+        315,
+        74
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/account-elaine-name-metrics.png",
+      "sha256": "55b32a11f00c6433ab24bcbbf256d8bf75105cd18f3c27bf0dd14abaf430bd8e",
+      "size_px": [
+        315,
+        74
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/account-kazike-name-metrics.png",
+      "sha256": "7066ff2ddd7efbc4e53524f295b3b33271869616924d1782a1d21e4c5bd67d60",
+      "size_px": [
+        345,
+        81
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/account-laomai-name-metrics.png",
+      "sha256": "d8d4a9ba01237c5f9c787fba0faf7eb137a08cdc74cf04168e337d4d8df1d1ce",
+      "size_px": [
+        335,
+        75
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/account-linxile-name-metrics.png",
+      "sha256": "63fe7ef9516937262741be7cae848cc7dec635d0e3982d95daa95ce8f5b3e773",
+      "size_px": [
+        315,
+        74
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/ai-most-liked-all-filter.png",
+      "sha256": "3c416f1fcf399fb41a7fe240a961827c0bb0c3e0acf58b0e11e74a08043819b7",
+      "size_px": [
+        980,
+        562
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/ai-suggestions.png",
+      "sha256": "714f0068a69ce174496d871e9af185d53dd4dac4d6908e40b4c623e1e61ee05d",
+      "size_px": [
+        1019,
+        413
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/ai-tools-most-liked-all-filter.png",
+      "sha256": "84c4303d6cb8e660eff9c8413e4c81dc103584bdc64b23630ca86d317520f524",
+      "size_px": [
+        456,
+        561
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/ai-tools-suggestions.png",
+      "sha256": "624e35f6ac967520703fd108b24e8aa93ea3d908b28f6e3dd50a8ba2a8f20b6f",
+      "size_px": [
+        554,
+        457
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/ai-tools-week-filter-no-results.png",
+      "sha256": "e727e93ad89693a5d26ea483454332a86e56204beabcde6355222e880cd68b4b",
+      "size_px": [
+        667,
+        563
+      ]
+    },
+    {
+      "file": "assets/2026-11-11-ai-discovery/deepseek-suggestions.png",
+      "sha256": "104a949875052db721062c9188584a6609cc1b8a14ddc6c2db276f590a88d21b",
+      "size_px": [
+        1019,
+        413
+      ]
+    }
+  ]
+}
