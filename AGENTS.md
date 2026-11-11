@@ -36,6 +36,7 @@ library/
   demand.md            评论里挖出的真实需求池，带出处
 posts/<日期-slug>/     自己的帖子：post.md（稿件+元数据+发布后数据）、assets/
 reviews/              周/月复盘（content-review 产出）
+series/               系列规划：设定、分集表、终点（对应小红书合集）
 rules/                 redlines.md 红线、ai-tells-zh.md 中文 AI 腔黑名单
 templates/             样本卡、账号、帖子模板
 scripts/               check_draft.py / lint_library.py / report.py（只用标准库）

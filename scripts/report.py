@@ -74,6 +74,14 @@ def post_report(root: Path) -> None:
         print(f"| {role} | {len(metas)} | {fmt(median(views))} | {fmt(median(follows))} | "
               f"{'-' if r is None else f'{r:.2f}'} | {leads} |")
 
+    series_rows = [(m, e) for _, m, e in with_data if m.get("series") and m.get("series") not in ("none", "无")]
+    if series_rows:
+        print("\n## 按系列（按集数看浏览和涨粉，判断追更有没有掉）\n")
+        print("| 系列 | 集 | 帖子 | d7浏览 | d7互动 | 涨粉 |\n|---|---|---|---|---|---|")
+        for m, e in sorted(series_rows, key=lambda r: (r[0].get("series", ""), to_int(r[0].get("episode")) or 0)):
+            print(f"| {m.get('series')} | {m.get('episode', '')} | {m.get('id')} | {fmt(to_int(m.get('d7_views')))} "
+                  f"| {e} | {fmt(to_int(m.get('d7_follows')))} |")
+
     print("\n## 规律自测效果（d7 互动中位数 vs 全部帖子中位数）\n")
     print("| 规律 | 当前状态 | 使用篇数 | 使用帖中位数 | 建议状态 | 是否需改 |\n|---|---|---|---|---|---|")
     uses: dict[str, list[int]] = defaultdict(list)

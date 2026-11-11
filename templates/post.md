@@ -5,6 +5,8 @@ status: draft
 platform: xhs
 pillar: <小白造工具|热点|AI管我|给自己造工具>
 role: <引流|信任|转化>
+series: <series/ 下的文件名，如 ai-database；不属于系列填 none>
+episode: <集数，不属于系列留空>
 patterns: <用到的规律 id，逗号分隔，如 P-001,P-004；没有填 none>
 inspired_by: <参考的样本 id，逗号分隔；没有填 none>
 product: <none|todoulist|网站监控>

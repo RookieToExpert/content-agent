@@ -110,6 +110,12 @@ def lint(root: Path) -> tuple[list[str], list[str]]:
         for ref in split_ids(meta.get("inspired_by")):
             if ref not in samples:
                 errors.append(f"{rel}: 参考样本 {ref} 不存在")
+        series = meta.get("series", "").strip()
+        if series and series not in ("none", "无") and not series.startswith("<"):
+            if not (root / "series" / f"{series}.md").exists():
+                errors.append(f"{rel}: 系列 {series} 没有对应的 series/{series}.md")
+            if to_int(meta.get("episode")) is None:
+                warns.append(f"{rel}: 属于系列 {series} 但没填 episode")
         if meta.get("status") == "published":
             if not meta.get("url") or not meta.get("published_at"):
                 errors.append(f"{rel}: 已发布但缺 url 或 published_at")

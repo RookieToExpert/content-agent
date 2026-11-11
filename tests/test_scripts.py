@@ -285,6 +285,18 @@ class TestLint(RepoFixture):
         self.assertIn("P-404", joined)
         self.assertIn("缺 url", joined)
 
+    def test_series_file_required(self):
+        p = self.add_post("2026-11-12-s")
+        text = p.read_text(encoding="utf-8").replace("role: 引流\n", "role: 引流\nseries: ghost\n")
+        p.write_text(text, encoding="utf-8")
+        errors, warns = lint_library.lint(self.tmp)
+        self.assertTrue(any("series/ghost.md" in e for e in errors))
+        self.assertTrue(any("episode" in w for w in warns))
+        (self.tmp / "series").mkdir()
+        (self.tmp / "series" / "ghost.md").write_text("# ghost\n", encoding="utf-8")
+        errors, _ = lint_library.lint(self.tmp)
+        self.assertFalse(any("series/ghost.md" in e for e in errors))
+
     def test_demand_dup(self):
         (self.tmp / "library" / "demand.md").write_text("| D-001 | a |\n| D-001 | b |\n", encoding="utf-8")
         errors, _ = lint_library.lint(self.tmp)
@@ -322,6 +334,17 @@ class TestReport(RepoFixture):
         role = next(ln for ln in out.splitlines() if ln.startswith("| 引流"))
         self.assertIn("| 引流 | 4 | 1000 | 5 |", role)
         self.assertTrue(role.rstrip(" |").endswith("4"), role)  # 线索合计 4（每篇 1）
+
+    def test_series_section_sorted_by_episode(self):
+        for pid, ep in (("2026-11-20-b", "2"), ("2026-11-13-a", "1"), ("2026-11-27-c", "10")):
+            p = self.add_post(pid)
+            p.write_text(p.read_text(encoding="utf-8").replace("role: 引流\n", f"role: 引流\nseries: s1\nepisode: {ep}\n"),
+                         encoding="utf-8")
+        self.add_post("2026-11-14-solo")  # 不属于系列，不应出现在系列表
+        out = self.run_report()
+        rows = [ln for ln in out.splitlines() if ln.startswith("| s1 |")]
+        self.assertEqual([r.split("|")[2].strip() for r in rows], ["1", "2", "10"])
+        self.assertNotIn("2026-11-14-solo |", "\n".join(rows))
 
     def test_missing_metrics_skipped(self):
         self.add_post("2026-11-01-a", d7=("", "", ""))

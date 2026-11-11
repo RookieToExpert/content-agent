@@ -5,6 +5,8 @@ status: review
 platform: xhs
 pillar: AI管我
 role: 引流
+series: ai-database
+episode: 1
 patterns: none
 inspired_by: none
 product: none
