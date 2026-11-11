@@ -8,7 +8,7 @@ author_followers: <采集时粉丝数，未知填 -1>
 published: <YYYY-MM-DD，未知填 unknown>
 collected: <YYYY-MM-DD>
 format: <图文|视频|长文>
-pillar: <AI热点上手|用AI折腾生活|AI一线见闻|硬核干货|其他>
+pillar: <小白造工具|热点|AI管我|给自己造工具|其他>
 hook_type: <热点|反差|有趣经历|实用清单|其他>
 likes: <数字>
 collects: <数字>

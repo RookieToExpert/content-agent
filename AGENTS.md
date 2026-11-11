@@ -7,7 +7,7 @@
 
 | 场景 | skill |
 |---|---|
-| 收样本、拆解爆款、分析对标账号、整理评论需求 | `.agents/skills/content-research` |
+| 收样本（只收同赛道）、拆解爆款、分析对标账号、整理评论需求 | `.agents/skills/content-research` |
 | 选题、写稿、改稿、做配图文案 | `.agents/skills/content-draft` |
 | 填发布后数据、周/月复盘、哪些规律真的有效 | `.agents/skills/content-review` |
 
@@ -15,7 +15,7 @@
 
 ## 硬规则
 
-1. **只写真实的东西。** 经历、数据、产品功能只能来自 `positioning.md`、`products.md`、用户提供的素材；没有就问，不编。宣传图文只能用 `products.md` 里写明的功能和真实截图。
+1. **故事可以编，技术和数据不能编。** 角色、情节、场景可以虚构（见 `positioning.md`「真实性边界」）；技术步骤、代码、工具能力必须真实可复现；自己产品的功能和数据只能来自 `products.md` 和用户提供的素材。
 2. **脱敏是红线。** 稿件里不能出现公司/客户名、内部域名、IP、主机名、集群名、账号、密钥、未打码截图。规则见 `rules/redlines.md`，`scripts/check_draft.py` 会拦截一部分，但脚本不能替代人看。
 3. **学结构，不抄内容。** 样本卡只摘标题和关键句（单句引用），不整篇搬运原文；永远保留原帖链接和作者。
 4. **规律要有证据。** `library/patterns.md` 每条规律必须引用样本 id，状态按证据升降（见 content-review）。只有 1～2 个样本支持的只能叫「假设」。

@@ -266,6 +266,16 @@ class TestLint(RepoFixture):
         errors, _ = lint_library.lint(self.tmp)
         self.assertEqual(errors, [])
 
+    def test_offtrack_samples_not_evidence(self):
+        self.add_sample("a1", "甲")
+        self.add_sample("a2", "乙")
+        p = self.tmp / "library" / "samples" / "xhs" / "a3.md"
+        p.write_text(sample("a3", "丙").replace("pillar: 硬核干货", "pillar: 其他"), encoding="utf-8")
+        self.set_patterns(pattern("P-001", "样本支持", "S-xhs-a1, S-xhs-a2, S-xhs-a3"))
+        errors, warns = lint_library.lint(self.tmp)
+        self.assertTrue(any("圈外参考" in w for w in warns))
+        self.assertTrue(any("现在 2 样本" in e for e in errors), errors)
+
     def test_post_refs_and_published_fields(self):
         p = self.add_post("2026-11-12-p", patterns="P-404")
         text = p.read_text(encoding="utf-8").replace("url: https://www.xiaohongshu.com/explore/2026-11-12-p", "url:")

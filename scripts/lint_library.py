@@ -80,9 +80,13 @@ def lint(root: Path) -> tuple[list[str], list[str]]:
             errors.append(f"patterns.md {pid}: 引用了不存在的样本 {bad}")
         if not refs:
             errors.append(f"patterns.md {pid}: 没有样本证据")
-        authors = {samples[r][1].get("author") for r in refs if r in samples}
-        if status == "样本支持" and (len(refs) < 3 or len(authors) < 2):
-            errors.append(f"patterns.md {pid}: 「样本支持」需要 ≥3 样本且 ≥2 个账号，现在 {len(refs)} 样本 / {len(authors)} 账号")
+        offtrack = [r for r in refs if r in samples and samples[r][1].get("pillar") == "其他"]
+        if offtrack:
+            warns.append(f"patterns.md {pid}: 引用了圈外参考样本 {offtrack}，不计入证据")
+        valid = [r for r in refs if r in samples and r not in offtrack]
+        authors = {samples[r][1].get("author") for r in valid}
+        if status == "样本支持" and (len(valid) < 3 or len(authors) < 2):
+            errors.append(f"patterns.md {pid}: 「样本支持」需要 ≥3 个同赛道样本且 ≥2 个账号，现在 {len(valid)} 样本 / {len(authors)} 账号")
         tests = split_ids(p["自测"])
         bad_t = [t for t in tests if t not in post_ids]
         if bad_t:
