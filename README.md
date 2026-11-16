@@ -4,11 +4,11 @@ AI 行业开发者账号的内容运营库：**学别人怎么发帖 → 沉淀�
 
 ## 🚀 快速入口（人和 AI 一起看）
 
-- 📊 **[对标学习库（Benchmarks）](benchmarks/README.md)**：按「对标博主 → 单篇爆款量化拆解卡」组织，点进去直接看原图、量化计分板和爆款公式
-  - 样板博主：[林熙乐（350 粉小号连出两篇千赞爆款）](benchmarks/林熙乐_350粉_小号爆款/README.md)
-    - 🔥 [1794赞 / 2337藏：个人认为github搞钱最快的方式](benchmarks/林熙乐_350粉_小号爆款/01_1794赞_github搞钱最快的方式.md)
-    - 🔥 [1149赞 vs 197赞：每天vibe coding六七小时的心得总结（含天然 A/B 对照）](benchmarks/林熙乐_350粉_小号爆款/02_1149赞_每天vibe-coding心得总结.md)
-- 🛠️ **[对标采集与拆解 SOP（`benchmark-collect` Skill）](.agents/skills/benchmark-collect/SKILL.md)**：给 Codex / 任意 Agent 抓取垂直博主、保存全部内页原图、生成量化卡片的固定规范
+- 📊 **[对标内容库（Benchmarks）](benchmarks/README.md)**：按「垂直对标博主 → 单篇帖子内容档案卡」组织，客观收集对标帖的**完整图文/视频脚本、视觉版式、文本风格与互动数据**（不下主观因果结论）
+  - 样板博主：[林熙乐（350 粉）](benchmarks/林熙乐_350粉_小号爆款/README.md)
+    - 📄 [1794赞 / 2337藏：个人认为github搞钱最快的方式](benchmarks/林熙乐_350粉_小号爆款/01_1794赞_github搞钱最快的方式.md)
+    - 📄 [1149赞 & 197赞（同文两版）：每天vibe coding六七小时的心得总结](benchmarks/林熙乐_350粉_小号爆款/02_1149赞_每天vibe-coding心得总结.md)
+- 🛠️ **[对标采集与归档 SOP（`benchmark-collect` Skill）](.agents/skills/benchmark-collect/SKILL.md)**：给 Codex / 任意 Agent 抓取垂直博主、保存全部内页原图、完整转录卡片文字/视频脚本的固定规范
 - 🎯 **[我们的账号定位（`positioning.md`）](positioning.md)** & **[第 1 篇待发稿：我把自己存进了数据库，然后被AI包养了](posts/2026-11-11-ai-coach-database/post.md)**
 
 ---
