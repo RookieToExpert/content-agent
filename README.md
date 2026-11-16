@@ -1,7 +1,17 @@
 # content-agent
 
-AI 行业开发者账号的内容运营库：**学别人怎么发帖 → 沉淀成有证据的规律 → 用自己的真实经历写稿 → 用发布后的数据修正规律。**
-先做小红书，结构对 X / 公众号等通用。
+AI 行业开发者账号的内容运营库：**学别人怎么发帖 → 沉淀成看得懂的量化卡片 → 用自己的真实经历写稿 → 用发布后的数据复盘迭代。**
+
+## 🚀 快速入口（人和 AI 一起看）
+
+- 📊 **[对标学习库（Benchmarks）](benchmarks/README.md)**：按「对标博主 → 单篇爆款量化拆解卡」组织，点进去直接看原图、量化计分板和爆款公式
+  - 样板博主：[林熙乐（350 粉小号连出两篇千赞爆款）](benchmarks/林熙乐_350粉_小号爆款/README.md)
+    - 🔥 [1794赞 / 2337藏：个人认为github搞钱最快的方式](benchmarks/林熙乐_350粉_小号爆款/01_1794赞_github搞钱最快的方式.md)
+    - 🔥 [1149赞 vs 197赞：每天vibe coding六七小时的心得总结（含天然 A/B 对照）](benchmarks/林熙乐_350粉_小号爆款/02_1149赞_每天vibe-coding心得总结.md)
+- 🛠️ **[对标采集与拆解 SOP（`benchmark-collect` Skill）](.agents/skills/benchmark-collect/SKILL.md)**：给 Codex / 任意 Agent 抓取垂直博主、保存全部内页原图、生成量化卡片的固定规范
+- 🎯 **[我们的账号定位（`positioning.md`）](positioning.md)** & **[第 1 篇待发稿：我把自己存进了数据库，然后被AI包养了](posts/2026-11-11-ai-coach-database/post.md)**
+
+---
 
 ## 闭环
 
