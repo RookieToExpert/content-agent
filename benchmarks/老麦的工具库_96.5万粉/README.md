@@ -2,7 +2,11 @@
 
 [⬅ 返回对标总览](../README.md) · [小红书主页](https://www.xiaohongshu.com/user/profile/5e1022d2000000000100395d)
 
+![主页，96.5万粉](assets/profile.png)
+
 小红书号 574806195。96.5万粉。简介：北漂8年，前字节、百度员工；专注效率利器、AI技术、自媒体神器；发誓把库里的1000个工具更新完。
+
+评论页截图：[assets/01/comments.png](assets/01/comments.png)
 
 ## 已归档笔记
 
